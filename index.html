@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/css/ticket.css">
+  
+  
+  <title>Document</title>
+</head>
+<body>
+  <div id="app">
+    <div :class="['bg', bg]">
+      <header>
+        <nav>
+          <ul>
+            <li><a class="link-bio" href="#bio" @click="bg = 'bio'">Work</a></li>
+            <li><a class="link-projects" href="#projects" @click="bg = 'projects'">Experiment</a></li>
+            <li><a class="link-find-me" href="#findme" @click="bg = 'find-me'">About me</a></li>
+          </ul>
+        </nav>
+        <div class="transition transition-bio"></div>
+        <div class="transition transition-projects"></div>
+        <div class="transition transition-find-me"></div>
+        <h1>Design</h1>
+      </header>
+      <div class="dots dots1"></div>
+      <div class="dots dots2"></div>
+      <main>
+        <transition name="slide-fade" mode="out-in">
+          <div key="bio" v-if="bg==='bio'">
+            <div class="heading">
+              <h2 class="heading">Portfolio</h2>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium voluptate labore at quibusdam numquam quod ut cumque repellat esse dicta maiores suscipit, perspiciatis odit amet sequi incidunt earum vero quis.</p></div>
+            <div class="container">
+              <a href="https://www.behance.net/gallery/167333115/Ui-Ux-Case-Study-If-Instagram-Made-a-Dating-App"target="_blank">
+                <div class="card">
+                  <h2>UI/UX</h2>
+                  <i class="fas fa-arrow-right"></i>
+                  <p>Case Study: Dating App</p>
+                  <div class="pic"></div>
+                  <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                  </ul>
+                  <div class="social">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-github"></i>
+                  </div>
+                  <button>
+                  </button>
+                </div>
+
+              </a>
+              <a href="https://eversun.netlify.app/" target="_blank">
+                <div class="card card2">
+                <h2>Freelance</h2>
+                <i class="fas fa-arrow-right"></i>
+                <p>Website: Eversun</p>
+                <div class="pic"></div>
+                <ul>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                </ul>
+                <button>
+                </button>
+              </div>
+
+              </a>
+              <a href="https://asoka.netlify.app/" target="_blank">
+                <div class="card card3">
+                  <h2>Freelance</h2>
+                  <i class="fas fa-arrow-right"></i>
+                  <p>Website: Asoka</p>
+                  <div class="pic"></div>
+                  <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                  </ul>
+                  <button>
+                  </button>
+                </div>
+
+              </a>
+              <a href="https://www.behance.net/gallery/172782179/Spline-and-Framer-Tool-Evaluation" target="_blank">
+                <div class="card card4">
+                  <h2>UI/UX</h2>
+                  <i class="fas fa-arrow-right"></i>
+                  <p>Tool Evaluation: Spline</p>
+                  <div class="pic"></div>
+                  <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                  </ul>
+                  <button>
+                  </button>
+                </div>
+
+              </a>
+              <a href="https://www.behance.net/gallery/172782179/Spline-and-Framer-Tool-Evaluation" target="_blank">
+                <div class="card card5">
+                  <h2>UI/UX</h2>
+                  <i class="fas fa-arrow-right"></i>
+                  <p>Tool Evaluation: Spline</p>
+                  <div class="pic"></div>
+                  <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                  </ul>
+                  <button>
+                  </button>
+                </div>
+
+              </a>
+              <a href="https://www.behance.net/gallery/172782179/Spline-and-Framer-Tool-Evaluation" target="_blank">
+                <div class="card card6">
+                  <h2>UI/UX</h2>
+                  <i class="fas fa-arrow-right"></i>
+                  <p>Tool Evaluation: Spline</p>
+                  <div class="pic"></div>
+                  <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                  </ul>
+                  <button>
+                  </button>
+                </div>
+
+              </a>
+          </div></div>
+          <p key="projects" v-if="bg==='projects'">This is a projects page.</p>
+          <p key="find-me" v-if="bg==='find-me'">See <a href="https://pehaa.com" target="_blank" rel="noopener">pehaa.com</a> for the complete website (built with Nuxt.js).</p>
+        </transition>
+      </main>
+    </div>
+  </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.11/vue.min.js"></script>
+<script src="/script.js"></script>
+</html>
+
